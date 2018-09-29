@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="69" started-at="2018-09-29T10:44:53Z" finished-at="2018-09-29T10:44:53Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="69" started-at="2018-09-29T10:44:53Z" finished-at="2018-09-29T10:44:53Z">
+      <class name="com.epam.tat.calctest.testng.SumTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.tat.calctest.testng.SumTest@28feb3fa]" name="setUp" is-config="true" duration-ms="10" started-at="2018-09-29T10:44:53Z" finished-at="2018-09-29T10:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="sumDoubleTest(double, double, double)[pri:0, instance:com.epam.tat.calctest.testng.SumTest@28feb3fa]" name="sumDoubleTest" duration-ms="5" started-at="2018-09-29T10:44:53Z" data-provider="sumDoubleData" finished-at="2018-09-29T10:44:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3.56]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3.56]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sumDoubleTest -->
+        <test-method status="PASS" signature="sumDoubleTest(double, double, double)[pri:0, instance:com.epam.tat.calctest.testng.SumTest@28feb3fa]" name="sumDoubleTest" duration-ms="3" started-at="2018-09-29T10:44:53Z" data-provider="sumDoubleData" finished-at="2018-09-29T10:44:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-12.55]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[14.56]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2.01]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sumDoubleTest -->
+        <test-method status="PASS" signature="sumDoubleTest(double, double, double)[pri:0, instance:com.epam.tat.calctest.testng.SumTest@28feb3fa]" name="sumDoubleTest" duration-ms="1" started-at="2018-09-29T10:44:53Z" data-provider="sumDoubleData" finished-at="2018-09-29T10:44:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sumDoubleTest -->
+        <test-method status="PASS" signature="sumDoubleTest(double, double, double)[pri:0, instance:com.epam.tat.calctest.testng.SumTest@28feb3fa]" name="sumDoubleTest" duration-ms="1" started-at="2018-09-29T10:44:53Z" data-provider="sumDoubleData" finished-at="2018-09-29T10:44:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1.5555]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.3333]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11.8888]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sumDoubleTest -->
+        <test-method status="PASS" signature="sumLongTest(long, long, long)[pri:0, instance:com.epam.tat.calctest.testng.SumTest@28feb3fa]" name="sumLongTest" duration-ms="3" started-at="2018-09-29T10:44:53Z" data-provider="sumLongData" finished-at="2018-09-29T10:44:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sumLongTest -->
+        <test-method status="PASS" signature="sumLongTest(long, long, long)[pri:0, instance:com.epam.tat.calctest.testng.SumTest@28feb3fa]" name="sumLongTest" duration-ms="4" started-at="2018-09-29T10:44:53Z" data-provider="sumLongData" finished-at="2018-09-29T10:44:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sumLongTest -->
+        <test-method status="PASS" signature="sumLongTest(long, long, long)[pri:0, instance:com.epam.tat.calctest.testng.SumTest@28feb3fa]" name="sumLongTest" duration-ms="4" started-at="2018-09-29T10:44:53Z" data-provider="sumLongData" finished-at="2018-09-29T10:44:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sumLongTest -->
+        <test-method status="PASS" signature="sumLongTest(long, long, long)[pri:0, instance:com.epam.tat.calctest.testng.SumTest@28feb3fa]" name="sumLongTest" duration-ms="3" started-at="2018-09-29T10:44:53Z" data-provider="sumLongData" finished-at="2018-09-29T10:44:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sumLongTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.tat.calctest.testng.SumTest@28feb3fa]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-09-29T10:44:53Z" finished-at="2018-09-29T10:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.epam.tat.calctest.testng.SumTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
