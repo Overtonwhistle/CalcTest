@@ -16,7 +16,7 @@ public class TstSin extends BaseTest {
 	}
 
 	@DataProvider(name = "sinData")
-	private Object[][] valuesForSubLong() {
+	private Object[][] valuesForSinDouble() {
 		return new Object[][]
 		{
 				{ 0.0, 0.0 },

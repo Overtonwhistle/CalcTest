@@ -11,7 +11,7 @@ public class TstDiv extends BaseTest {
 		calculator.div(12, 0);
 	}
 
-	@Test(enabled = false, dataProvider = "divLongData")
+	@Test(dataProvider = "divLongData")
 	public void divLongTest(long a, long b, long expectedValue) {
 		long result = calculator.div(a, b);
 		Assert.assertEquals(result, expectedValue, "Invalid result");

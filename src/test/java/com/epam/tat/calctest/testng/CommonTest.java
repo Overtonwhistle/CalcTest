@@ -7,8 +7,8 @@ public class CommonTest extends BaseTest {
 	@Test
 	public void common() {
 
-		System.out.println("Math: " + Math.tan((Math.PI/2)));
-		System.out.println(calculator.tg((0)));
+		System.out.println("Math: " + Math.pow(3, 2.2));
+		System.out.println(calculator.pow(3, 2.2));
 	}
 
 }

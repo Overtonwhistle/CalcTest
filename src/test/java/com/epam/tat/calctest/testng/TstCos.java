@@ -1,10 +1,10 @@
 package com.epam.tat.calctest.testng;
 
+
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import static java.lang.Math.PI;
-import static java.lang.Math.sin;
 import static java.lang.Math.cos;
 import static java.lang.Math.sqrt;
 
@@ -17,7 +17,7 @@ public class TstCos extends BaseTest {
 	}
 
 	@DataProvider(name = "cosData")
-	private Object[][] valuesForSubLong() {
+	private Object[][] values() {
 		return new Object[][]
 		{
 				{ 0.0, 1 }, // bug

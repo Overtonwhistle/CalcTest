@@ -15,7 +15,7 @@ public class TstCtg extends BaseTest {
 	}
 
 	@DataProvider(name = "ctgData")
-	private Object[][] valuesForSubLong() {
+	private Object[][] values() {
 		return new Object[][]
 		{
 				{ (PI / 4), 1 }, // ok
