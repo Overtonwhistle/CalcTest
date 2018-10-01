@@ -1,29 +1,33 @@
 package com.epam.tat.calctest.testng;
 
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import com.epam.tat.calctest.testng.provider.DivProvider;
 
 public class TstDiv extends BaseTest {
 
-	@Test(expectedExceptions = NumberFormatException.class)
+	@Test(expectedExceptions = NumberFormatException.class, groups =
+	{ "arithmetic", "longInputData", "throwingException" })
 	public void divLongDivByZeroTest() {
 		calculator.div(12, 0);
 	}
 
-	@Test(dataProvider = "divLongData")
+	@Test(dataProvider = "divLongData", dataProviderClass = DivProvider.class, groups =
+	{ "arithmetic", "longInputData" })
 	public void divLongTest(long a, long b, long expectedValue) {
 		long result = calculator.div(a, b);
 		Assert.assertEquals(result, expectedValue, "Invalid result");
 	}
 
-	@Test(dataProvider = "divDoubleData")
+	@Test(dataProvider = "divDoubleData", dataProviderClass = DivProvider.class, groups =
+	{ "arithmetic", "doubleInputData" })
 	public void divDoubleTest(double a, double b, double expectedValue) {
 		double result = calculator.div(a, b);
 		Assert.assertEquals(result, expectedValue, "Invalid result");
 	}
 
-	@DataProvider(name = "divLongData")
+	/*@DataProvider(name = "divLongData")
 	private Object[][] valuesForDivLong() {
 		return new Object[][]
 		{
@@ -47,6 +51,6 @@ public class TstDiv extends BaseTest {
 				{ 4042.66, -144.22, -28.031202329773954 },
 
 		};
-	}
+	}*/
 
 }

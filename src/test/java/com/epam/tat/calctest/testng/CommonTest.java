@@ -4,7 +4,8 @@ import org.testng.annotations.Test;
 
 public class CommonTest extends BaseTest {
 
-	@Test
+	@Test(groups =
+	{ "arithmetic", "longInputData, throwingException" })
 	public void common() {
 
 		System.out.println("Math: " + Math.pow(3, 2.2));

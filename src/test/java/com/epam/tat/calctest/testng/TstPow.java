@@ -1,18 +1,20 @@
 package com.epam.tat.calctest.testng;
 
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import com.epam.tat.calctest.testng.provider.PowProvider;
 
 public class TstPow extends BaseTest {
 
-	@Test(dataProvider = "powData")
+	@Test(dataProvider = "powData", dataProviderClass = PowProvider.class, groups =
+	{ "arithmetic", "doubleInputData" })
 	public void powTest(double a, double b, double expectedValue) {
 		double result = calculator.pow(a, b);
 		Assert.assertEquals(result, expectedValue, "Invalid result");
 	}
 
-	@DataProvider(name = "powData")
+	/*@DataProvider(name = "powData")
 	private Object[][] valuesForPowDouble() {
 		return new Object[][]
 		{
@@ -25,6 +27,6 @@ public class TstPow extends BaseTest {
 													// only?
 
 		};
-	}
+	}*/
 
 }

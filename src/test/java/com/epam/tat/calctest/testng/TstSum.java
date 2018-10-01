@@ -1,24 +1,27 @@
 package com.epam.tat.calctest.testng;
 
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import com.epam.tat.calctest.testng.provider.SumProvider;
 
 public class TstSum extends BaseTest {
 
-	@Test(dataProvider = "sumLongData")
+	@Test(dataProvider = "sumLongData", dataProviderClass = SumProvider.class, groups =
+	{ "arithmetic", "longInputData" })
 	public void sumLongTest(long a, long b, long expectedValue) {
 		long result = calculator.sum(a, b);
 		Assert.assertEquals(result, expectedValue, "Invalid result");
 	}
 
-	@Test(dataProvider = "sumDoubleData")
+	@Test(dataProvider = "sumDoubleData", dataProviderClass = SumProvider.class, groups =
+	{ "arithmetic", "doubleInputData" })
 	public void sumDoubleTest(double a, double b, double expectedValue) {
 		double result = calculator.sum(a, b);
 		Assert.assertEquals(result, expectedValue, "Invalid result");
 	}
 
-	@DataProvider(name = "sumLongData")
+	/*@DataProvider(name = "sumLongData")
 	private Object[][] valuesForSumLong() {
 		return new Object[][]
 		{
@@ -36,6 +39,6 @@ public class TstSum extends BaseTest {
 				{ -12.55, 14.56, 2.01 },
 				{ -0, 0.0, 0 },
 				{ 1.5555, 10.3333, 11.8888 } };
-	}
+	}*/
 
 }

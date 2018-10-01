@@ -1,21 +1,55 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Calculator 1.0 test">
-	
-   <listeners>
-		<listener class-name="com.epam.cdp.cal.listeners.TestListeners"></listener>
-	</listeners>
-	
-	<test name="Sub Cal Test">
-		<classes>
-			<class name="com.epam.cdp.cal.tests.SubCalTest"/>
-		</classes>
+<suite name="Calculator test suite" parallel="tests"
+	thread-count="3">
+
+	<test name="Tests with exception">
+		<groups>
+			<run>
+				<include name="throwingException" />
+			</run>
+		</groups>
+		<packages>
+			<!-- Comment line below to disable test -->
+			<!-- <package name="com.epam.tat.calctest.testng.*" /> -->
+		</packages>
 	</test>
-	
-   <test name="Sum Cal Test">
-		<classes>
-			<class name="com.epam.cdp.cal.tests.SumCalTest"></class>
-		</classes>
+
+	<test name="Tests of trigonimetric function">
+		<groups>
+			<run>
+				<include name="trigonometric" />
+			</run>
+		</groups>
+		<packages>
+			<!-- Comment line below to disable test -->
+			<!-- <package name="com.epam.tat.calctest.testng.*" /> -->
+		</packages>
 	</test>
-   
+
+	<test name="Tests of function with Long aruments">
+		<groups>
+			<run>
+				<include name="longInputData" />
+			</run>
+		</groups>
+		<packages>
+			<!-- Comment line below to disable test -->
+			<!-- <package name="com.epam.tat.calctest.testng.*" /> -->
+		</packages>
+	</test>
+
+	<test name="Tests of arithmetic function with Double aruments">
+		<groups>
+			<run>
+				<include name="doubleInputData" />
+				<exclude name="trigonometric" />
+			</run>
+		</groups>
+		<packages>
+			<!-- Comment line below to disable test -->
+			<package name="com.epam.tat.calctest.testng.*" />
+		</packages>
+	</test>
+
 </suite>
