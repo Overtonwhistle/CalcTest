@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import com.epam.tat.calctest.testng.provider.SumProvider;
 
-public class TstSum extends BaseTest {
+public class SumTest extends BaseTest {
 
 	@Test(dataProvider = "sumLongData", dataProviderClass = SumProvider.class, groups =
 	{ "arithmetic", "longInputData" })
@@ -20,25 +20,5 @@ public class TstSum extends BaseTest {
 		double result = calculator.sum(a, b);
 		Assert.assertEquals(result, expectedValue, "Invalid result");
 	}
-
-	/*@DataProvider(name = "sumLongData")
-	private Object[][] valuesForSumLong() {
-		return new Object[][]
-		{
-				{ 0, 3, 3 },
-				{ 10, -1, 9 },
-				{ 0, 0, 0 },
-				{ -1, 10, 9 } };
-	}
-
-	@DataProvider(name = "sumDoubleData")
-	private Object[][] valuesForSumDouble() {
-		return new Object[][]
-		{
-				{ 0.0, 3.56, 3.56 },
-				{ -12.55, 14.56, 2.01 },
-				{ -0, 0.0, 0 },
-				{ 1.5555, 10.3333, 11.8888 } };
-	}*/
 
 }
