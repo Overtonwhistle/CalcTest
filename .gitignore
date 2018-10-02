@@ -30,6 +30,7 @@ hs_err_pid*
 # Files that might appear in the root of a volume
 /target/
 /test-output/
+/qwerty/
 .DocumentRevisions-V100
 .fseventsd
 .Spotlight-V100
