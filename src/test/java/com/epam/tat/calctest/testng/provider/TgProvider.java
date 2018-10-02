@@ -9,7 +9,7 @@ import org.testng.annotations.DataProvider;
 public class TgProvider {
 
 	@DataProvider(name = "tgData")
-	private Object[][] values() {
+	private Object[][] valuesForTgDouble() {
 		return new Object[][]
 		{
 				{ (PI / 4), 1 }, // ok

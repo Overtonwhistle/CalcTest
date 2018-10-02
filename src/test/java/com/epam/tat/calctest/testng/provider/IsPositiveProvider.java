@@ -5,7 +5,7 @@ import org.testng.annotations.DataProvider;
 public class IsPositiveProvider {
 
 	@DataProvider(name = "isPositiveData")
-	private Object[][] valuesForIsPositiveDouble() {
+	private Object[][] valuesForIsPositiveLong() {
 		return new Object[][]
 		{
 				{ 1, true },

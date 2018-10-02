@@ -7,7 +7,7 @@ import com.epam.tat.calctest.testng.provider.CosProvider;
 
 public class CosTest extends BaseTest {
 
-	@Test(dataProvider = "cosData", dataProviderClass = CosProvider.class, groups =
+	@Test(threadPoolSize = 3, dataProvider = "cosData", dataProviderClass = CosProvider.class, groups =
 	{ "trigonometric", "doubleInputData" })
 	public void cosTest(double a, double expectedValue) {
 		double result = calculator.cos(a);

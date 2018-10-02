@@ -15,7 +15,7 @@ public class DivProvider {
 	}
 
 	@DataProvider(name = "divDoubleData")
-	private Object[][] valuesForMultDouble() {
+	private Object[][] valuesForDivDouble() {
 		return new Object[][]
 		{
 				{ 0.0, 13.56, 0 },

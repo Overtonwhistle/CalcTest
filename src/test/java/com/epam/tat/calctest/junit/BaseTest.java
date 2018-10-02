@@ -19,7 +19,6 @@ public class BaseTest {
 	@Before
 	public void setUp() {
 		calculator = new Calculator();
-//		System.err.println("********* Calculator created *********");
 		Assert.assertNotNull("Calculator object not created!",calculator);
 	}
 
