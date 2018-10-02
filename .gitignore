@@ -28,6 +28,8 @@ hs_err_pid*
 ._*
 
 # Files that might appear in the root of a volume
+/target/
+/test-output/
 .DocumentRevisions-V100
 .fseventsd
 .Spotlight-V100
@@ -69,5 +71,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-/target/
-/test-output/
