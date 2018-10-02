@@ -9,24 +9,24 @@
       </run>
     </groups>
     <classes>
-      <class name="com.epam.tat.calctest.testng.TstMult">
-        <methods>
-          <include name="setUp"/>
-          <include name="multDoubleTest" invocation-numbers="5"/>
-        </methods>
-      </class> <!-- com.epam.tat.calctest.testng.TstMult -->
-      <class name="com.epam.tat.calctest.testng.TstPow">
+      <class name="com.epam.tat.calctest.testng.PowTest">
         <methods>
           <include name="powTest" invocation-numbers="5"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.epam.tat.calctest.testng.TstPow -->
-      <class name="com.epam.tat.calctest.testng.TstSqrt">
+      </class> <!-- com.epam.tat.calctest.testng.PowTest -->
+      <class name="com.epam.tat.calctest.testng.SqrtTest">
         <methods>
           <include name="sqrtTest" invocation-numbers="5"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.epam.tat.calctest.testng.TstSqrt -->
+      </class> <!-- com.epam.tat.calctest.testng.SqrtTest -->
+      <class name="com.epam.tat.calctest.testng.MultTest">
+        <methods>
+          <include name="multDoubleTest" invocation-numbers="5"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.epam.tat.calctest.testng.MultTest -->
     </classes>
   </test> <!-- Tests of arithmetic function with Double aruments(failed) -->
 </suite> <!-- Failed suite [Calculator test suite] -->
